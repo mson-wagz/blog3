@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import '../topbar.css'
+import {Link} from "react-router-dom"
 
 export default function TopBar() {
   return (
@@ -14,11 +15,11 @@ export default function TopBar() {
               <a href='https://blogappchatbot.streamlit.app/'>
                 <img src="./img/images.png" alt="chatbox"  width="20px" /></a></div>
                 </div>
-              <li className='topListItem'><a href="/">Home</a></li>
-              <li className='topListItem'><a href="/Settings">Settings</a></li>
-              <li className='topListItem'><a href="/Register"> Register</a></li>
-              <li className='topListItem'><a href="/write">Write</a></li>
-              <li className='topListItem'><a href="/Login">Login</a></li>
+              <li className='topListItem'><Link to={'/'}>Home</Link></li>
+              <li className='topListItem'><Link to={'/Settings'}>Settings</Link></li>
+              <li className='topListItem'><Link to={'/Register'}>Register</Link></li>
+              <li className='topListItem'><Link to={'/write'}>Write</Link></li>
+              <li className='topListItem'><Link to={'/Login'}>Login</Link></li>
             </ul>
         </div>
         <div className='topRight'>
@@ -28,3 +29,4 @@ export default function TopBar() {
     </div>
   )
 }
+
