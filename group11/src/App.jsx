@@ -11,7 +11,7 @@ import Write from "./pages/Write/Write";
 // Main App component
 function App() {
   return (
-    <Router>
+    <Router basename="/blog3">
       {/* Top navigation bar */}
       <TopBar />
 
